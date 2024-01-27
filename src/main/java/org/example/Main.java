@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.singleton.TVSet;
 import org.example.threads.Stack;
 import org.example.threads.Thread1;
 import org.example.threads.Thread2;
@@ -47,6 +48,10 @@ public class Main {
                 stack.pop();
             }
         }, "poper").start();
+
+        // Singleton Design Pattern
+        System.out.println(TVSet.getTvSetInstance());
+
 
         System.out.println("Ending...");
     }
